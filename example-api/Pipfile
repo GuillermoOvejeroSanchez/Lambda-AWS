@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+starlette-exporter = "==0.6.0"
+fastapi = "*"
+uvicorn = "*"
+mangum = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+app = "uvicorn main:app --port 3000 --reload"
+test = "python -m pytest -s  --html-report=./tests/index.html"
+pep8 = "python -m flake8"
+isort = "python -m isort --sp pyproject.toml --skip .venv ."
+black = "python -m black ."
+
+[pipenv]
+allow_prereleases = true

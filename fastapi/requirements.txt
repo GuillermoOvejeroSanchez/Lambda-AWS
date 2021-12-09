@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+starlette-exporter==0.6.0
+requests
+datetime
+mangum

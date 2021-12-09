@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+cachetools
+starlette-exporter
+boto3
+kafka-python
+pydantic
+requests
+mangum
